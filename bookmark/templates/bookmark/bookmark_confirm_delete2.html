@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>confirm_delete</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="alert alert-danger">
+           아래 북마크를 삭제하시겠습니까?<br>{{object}}
+        </div>
+        <input type="submit" value="삭제하기" class="btn btn-danger">
+    </form>
+</body>
+</html>
